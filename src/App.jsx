@@ -140,8 +140,8 @@ export default function App() {
             James Mbabila Naya, Esli Bonsu Adarkwah, Nana Benyin Eboe Nyamekye
             Essel-Biney, Racheal Kafui Asare, Alexander Giffah, Timothy Rezon
             Gambo, Precious Togodui Akofa, Majeeda Azong, Rauda Sidiq Adams,
-            Gilbert Nketiah, Deloris Nkrumah, Andy Ampiah Quarshie &amp; Elvis
-            Kwason Tiburu
+            Gilbert Nketiah, Deloris Nkrumah &amp; Andy Ampiah Quarshie under 
+            the supervision of Prof. Elvis Kwason Tiburu.
           </p>
           <p className="credits-affiliation">
             Department of Biomedical Engineering · University of Ghana
