@@ -43,7 +43,10 @@ export default function App() {
       <div className="app">
         <header>
           <h1>UG Biophysics Instrument Directory</h1>
-          <p>A searchable inventory of biophysics-relevant instrumentation across the University of Ghana, based on the 2026 survey.</p>
+          <p>
+            A searchable inventory of biophysics-relevant instrumentation across
+            the University of Ghana, based on the 2026 survey.
+          </p>
         </header>
 
         <div className="controls">
@@ -53,19 +56,28 @@ export default function App() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <select value={facility} onChange={(e) => setFacility(e.target.value)}>
+          <select
+            value={facility}
+            onChange={(e) => setFacility(e.target.value)}
+          >
             {facilities.map((f) => (
-              <option key={f} value={f}>{f}</option>
+              <option key={f} value={f}>
+                {f}
+              </option>
             ))}
           </select>
           <select value={status} onChange={(e) => setStatus(e.target.value)}>
             {statuses.map((s) => (
-              <option key={s} value={s}>{s}</option>
+              <option key={s} value={s}>
+                {s}
+              </option>
             ))}
           </select>
         </div>
 
-        <p className="result-count">{filtered.length} of {instruments.length} instruments</p>
+        <p className="result-count">
+          {filtered.length} of {instruments.length} instruments
+        </p>
 
         <div className="table-card">
           <table className="instrument-table">
@@ -89,14 +101,21 @@ export default function App() {
                       <tr
                         key={i.id}
                         className="instrument-row"
-                        onClick={() => setExpanded(expanded === i.id ? null : i.id)}
+                        onClick={() =>
+                          setExpanded(expanded === i.id ? null : i.id)
+                        }
                       >
                         <td>{i.name}</td>
-                        <td>{i.manufacturer}{i.model ? ` / ${i.model}` : ""}</td>
+                        <td>
+                          {i.manufacturer}
+                          {i.model ? ` / ${i.model}` : ""}
+                        </td>
                         <td>{i.lab}</td>
                         <td>{i.cost}</td>
                         <td>
-                          <span className={`status-pill status-${i.status}`}>
+                          <span
+                            className={`status-pill status-${i.status}`}
+                          >
                             {i.status.replace("-", " ")}
                           </span>
                         </td>
@@ -113,6 +132,21 @@ export default function App() {
             </tbody>
           </table>
         </div>
+
+        {/* Credits footer */}
+        <footer className="credits">
+          <p className="credits-title">Compiled by the 2026 Survey Team</p>
+          <p className="credits-names">
+            James Mbabila Naya, Esli Bonsu Adarkwah, Nana Benyin Eboe Nyamekye
+            Essel-Biney, Racheal Kafui Asare, Alexander Giffah, Timothy Rezon
+            Gambo, Precious Togodui Akofa, Majeeda Azong, Rauda Sidiq Adams,
+            Gilbert Nketiah, Deloris Nkrumah, Andy Ampiah Quarshie &amp; Elvis
+            Kwason Tiburu
+          </p>
+          <p className="credits-affiliation">
+            Department of Biomedical Engineering · University of Ghana
+          </p>
+        </footer>
       </div>
     </div>
   );
