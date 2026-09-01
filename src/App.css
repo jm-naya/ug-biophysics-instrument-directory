@@ -1,0 +1,139 @@
+.page {
+  min-height: 100vh;
+  background: #f4f5f7;
+  padding: 2.5rem 1rem;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #1a1a1a;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  color: #14213d;
+}
+
+header p {
+  color: #5a5f6a;
+  margin: 0 0 1.5rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 240px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #d5d8dd;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.controls select {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #d5d8dd;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.controls input:focus,
+.controls select:focus {
+  outline: 2px solid #2f5fda;
+  outline-offset: 1px;
+}
+
+.result-count {
+  color: #7b8190;
+  font-size: 0.82rem;
+  margin: 0 0 1rem;
+}
+
+.table-card {
+  background: #fff;
+  border: 1px solid #e4e6ea;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(20, 33, 61, 0.06);
+  overflow: hidden;
+}
+
+.instrument-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.instrument-table thead th {
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  background: #14213d;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.group-row td {
+  padding: 0.5rem 0.9rem;
+  background: #eef1f7;
+  color: #14213d;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-top: 1px solid #dde1e8;
+  border-bottom: 1px solid #dde1e8;
+}
+
+.instrument-table td {
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid #eceef1;
+  color: #24272e;
+}
+
+.instrument-row {
+  cursor: pointer;
+  background: #fff;
+}
+
+.instrument-row:hover {
+  background: #f6f8fc;
+}
+
+.detail-row td {
+  background: #fafbfc;
+  color: #565b66;
+  font-style: italic;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid #eceef1;
+}
+
+.status-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: capitalize;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.status-operational { background: #2e7d32; }
+.status-intermittent { background: #ed6c02; }
+.status-non-operational { background: #c62828; }
